@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from '../styles/Timer.module.css' // Импортируем CSS-модуль
+import styles from '../styles/Timer.module.css' 
 
 function Timer() {
   const [timeLeft, setTimeLeft] = useState<number>(0);
@@ -18,7 +18,7 @@ function Timer() {
   }, [timerOn]);
 
   const startTimer = (): void => {
-    setTimeLeft(60); // Установить время таймера
+    setTimeLeft(60); 
     setTimerOn(true);
   };
 
